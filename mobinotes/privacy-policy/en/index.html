@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"MobiNotes" Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 { text-align: center; font-size: 24px; margin-bottom: 5px; }
+        .last-updated { text-align: center; color: #666; font-size: 14px; margin-bottom: 30px; }
+        h2 { font-size: 18px; margin-top: 25px; margin-bottom: 10px; color: #111; }
+        p { margin-bottom: 15px; text-align: justify; }
+        .important { background-color: #f8f9fa; border-left: 4px solid #dc3545; padding: 15px; font-weight: bold; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+		.lang-switcher { text-align: right; margin-bottom: 20px; font-size: 14px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher"><strong>EN</strong> | <a href="../ru/">RU</a></div>
+
+    <h1>"MobiNotes" Privacy Policy</h1>
+	<div class="last-updated">Last Updated: August 2026</div>
+
+    <div class="important">
+        IMPORTANT: BY USING THIS MOBILE APPLICATION, YOU SIGNIFY YOUR AGREEMENT TO OUR PRIVACY POLICY. IF YOU DO NOT AGREE TO THIS PRIVACY POLICY, PLEASE DO NOT USE THIS MOBILE APPLICATION.
+    </div>
+    
+    <p>"MobiNotes" ("Us" or "We" or "Our"), developed by Dwerty, is committed to respecting the privacy rights of the users of its mobile application, as well as its related services. We created this Privacy Policy to inform you and provide necessary disclosures regarding our collection and using of information when you use our mobile application. We collect and use some of your information, as described below, to provide our mobile application and to measure and improve it over time.</p>
+
+    <h2>1. Data Minimization and Ephemeral Processing</h2>
+    <p>The Application functions primarily as a local, offline note-taking and data protection utility. The Application processes and stores your note contents, passwords, and attached files strictly locally on your device. We do not collect, monitor, or store your daily activity on external servers. Network transmission is limited to a single, user-initiated authentication feature:</p>
+    <ul>
+        <li><strong>Password Recovery Feature:</strong> To secure the local application, a user may optionally add an email address in the app settings. If the user initiates a password recovery request, this email address is protected using application-level asymmetric cryptography (encryption algorithms) and transmitted to our server via a proprietary binary protocol over a raw TCP transport layer. This custom encryption ensures the payload remains secure against unauthorized interception during transit. Our server processes this request **ephemerally** to immediately dispatch the recovery email. **Our server does not retain, log, or store the email address in any database** once the delivery is complete.</li>
+    </ul>
+
+    <h2>2. Local Database and Encryption</h2>
+    <p>All notes, texts, and personal data created within the Application are automatically encrypted and stored strictly within a local database in your device's internal app-specific storage (sandboxed directory). This data is protected by cryptographic algorithms at the database level. Except for the transient password recovery request, your core data is completely inaccessible to other applications, the operating system, the developer, or any external servers.</p>
+
+    <h2>3. Local Import and Export</h2>
+    <p>The Application includes a built-in feature for backing up and transferring data (exporting and importing notes via files), as well as the ability to attach local media files. This process occurs strictly locally on the device under the user's full control:</p>
+    <ul>
+        <li><strong>During Export:</strong> The encrypted backup file is saved to a directory chosen manually by the user.</li>
+        <li><strong>During Import:</strong> The Application only reads the backup or media file explicitly selected by the user for processing.</li>
+    </ul>
+
+    <h2>4. No Analytics and Third-Party SDKs</h2>
+    <p>The Application does not contain any third-party advertising networks, tracking or analytics tools (such as Google Analytics or Firebase), or crash reporting libraries that could collect log data or secretly track your online activity.</p>
+
+    <h2>5. Device Permissions and Storage Access</h2>
+    <p>The Application requires internet permission solely to handle the ephemeral password recovery feature via our encrypted custom TCP binary protocol. Other requested storage permissions are used strictly to support the built-in file handling and the import/export features depending on your Android version:</p>
+    <ul>
+        <li><strong>On Android 13 (API 33) and higher:</strong> The Application requests the <code>READ_MEDIA_IMAGES</code> permission solely to allow users to select and import local images into their notes.</li>
+        <li><strong>On Android 12 (API 32) and lower:</strong> The Application requests the <code>READ_EXTERNAL_STORAGE</code> permission to read backup files and media files from the device's shared storage based entirely on user selection.</li>
+        <li><strong>On Android 10 (API 29) and lower:</strong> The Application requests the <code>WRITE_EXTERNAL_STORAGE</code> permission to physically save (write) encrypted note export files to the device's external memory.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Since the Application functions locally and does not track online user data, we do not knowingly or unknowingly request, collect, or process personal data from children under the age of 13 (or 16 in the EU). The transient email-based password recovery system is not designed to log or collect data from minors.</p>
+
+    <h2>7. Security of Transmission</h2>
+    <p>We are committed to securing your data during network interactions. Even though standard high-level web protocols (like HTTPS/TLS) are not utilized, all information sent over our custom TCP binary protocol is strictly encrypted on the client side using strong cryptographic standards prior to leaving the device. However, please note that no method of electronic storage or transmission can be guaranteed as 100% secure.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. However, the core principle of extreme data minimization, ephemeral processing, absolute note privacy, and zero data logging will remain unchanged.</p>
+
+    <p>We can be contacted concerning this Privacy Policy by email at <a href="mailto:dwerty@yandex.ru">dwerty@yandex.ru</a>.</p>
+
+</body>
+</html>
